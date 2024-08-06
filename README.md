@@ -9,17 +9,17 @@ numpy_practice/
 │
 ├── tasks/
 │   ├── __init__.py
+│   ├── array_advanced.py
 │   ├── basic_array.py
-│   ├── 
-│   ├── 
+│   ├── ecommerce.py
 │   └── 
 │    
 │
 ├── tests/
 │   ├── __init__.py
+│   ├── test_array_advanced.py
 │   ├── test_basic_array.py
-│   ├── 
-│   ├── 
+│   ├── test_ecommerce.py
 │   └── 
 │
 └── README.md
@@ -32,15 +32,30 @@ numpy_practice/
 - Test File: `test_basic_array.py`
 - Description: Introduces basic operations in NumPy by creating and manipulating simple arrays.
 
+### Task 2: Analyzing and Visualizing E-Commerce Transactions with NumPy
+- File: `ecommerce.py`
+- Test File: `test_ecommerce.py`
+- Description: Develop a set of Python functions using NumPy to manipulate and analyze a simulated ecommerce dataset.
+
+### Task 3: Array Manipulation with Separate Output Function in NumPy
+- File: `array_advanced.py`
+- Test File: `test_array_advanced.py`
+- Description: Develop a set of Python functions using NumPy to manipulate arrays through operations
+such as transposing, reshaping, splitting, and combining.
+
 ## Running the Scripts
 
 To run each task's script:
 `python tasks/basic_array.py`
+`python tasks/ecommerce.py`
+`python tasks/array_advanced.py`
 
 ## Running the Tests
 
 To run tests for a specific task:
 `python -m unittest tests/test_basic_array.py`
+`python -m unittest tests/test_ecommerce.py`
+`python -m unittest tests/test_array_advanced.py`
 
 To run all tests:
 `python -m unittest tests`
