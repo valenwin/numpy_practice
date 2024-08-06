@@ -38,7 +38,7 @@ def main():
     first_two_rows_cols = manipulator.get_first_two_rows_cols()
     BasicArrayManipulator.print_array(first_two_rows_cols, "First two rows and columns of two-dimensional array:")
 
-    # Basic Arithmetic
+    # Basic Logic
     one_dim_plus_five = manipulator.add_five_to_one_dim()
     BasicArrayManipulator.print_array(one_dim_plus_five, "One-dimensional array + 5:")
 
