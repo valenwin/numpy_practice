@@ -10,17 +10,16 @@ numpy_practice/
 ├── tasks/
 │   ├── __init__.py
 │   ├── array_advanced.py
+│   ├── array_data.py
 │   ├── basic_array.py
 │   ├── ecommerce.py
-│   └── 
-│    
 │
 ├── tests/
 │   ├── __init__.py
 │   ├── test_array_advanced.py
+│   ├── test_array_data.py
 │   ├── test_basic_array.py
 │   ├── test_ecommerce.py
-│   └── 
 │
 └── README.md
 ```
@@ -43,12 +42,19 @@ numpy_practice/
 - Description: Develop a set of Python functions using NumPy to manipulate arrays through operations
 such as transposing, reshaping, splitting, and combining.
 
+### Task 4: Comprehensive Data Handling and Analysis with NumPy
+- File: `array_data.py`
+- Test File: `test_array_data.py`
+- Description: Develop a set of Python functions using NumPy to handle reading/writing data and
+performing aggregate analyses on arrays.
+
 ## Running the Scripts
 
 To run each task's script:
 `python tasks/basic_array.py`
 `python tasks/ecommerce.py`
 `python tasks/array_advanced.py`
+`python tasks/array_data.py`
 
 ## Running the Tests
 
@@ -56,6 +62,7 @@ To run tests for a specific task:
 `python -m unittest tests/test_basic_array.py`
 `python -m unittest tests/test_ecommerce.py`
 `python -m unittest tests/test_array_advanced.py`
+`python -m unittest tests/test_array_data.py`
 
 To run all tests:
 `python -m unittest tests`
