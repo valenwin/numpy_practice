@@ -1,7 +1,7 @@
 import unittest
 import numpy as np
 from datetime import datetime
-from tasks.ecommerce import ECommerceTransactions
+from tasks.ecommerce_transactions import ECommerceTransactions
 
 
 class TestECommerceTransactions(unittest.TestCase):
@@ -19,13 +19,13 @@ class TestECommerceTransactions(unittest.TestCase):
     def test_unique_users(self):
         unique_users = self.analyzer.unique_users()
         self.assertIsInstance(unique_users, int)
-        self.assertLessEqual(unique_users, 100)  # As we generated 100 unique user IDs
+        self.assertLessEqual(unique_users, 100)
 
     def test_most_purchased_product(self):
         product = self.analyzer.most_purchased_product()
         self.assertIsInstance(product, (int, np.int64))
         self.assertGreaterEqual(product, 1)
-        self.assertLess(product, 501)  # As we generated product IDs from 1 to 500
+        self.assertLess(product, 501)
 
     def test_check_data_types(self):
         dtype = self.analyzer.check_data_types()
@@ -37,8 +37,8 @@ class TestECommerceTransactions(unittest.TestCase):
 
     def test_user_transaction_count(self):
         count = self.analyzer.user_transaction_count()
-        self.assertEqual(len(count), 101)  # 100 users + 1 (for 0 index)
-        self.assertEqual(count[0], 0)  # No user with ID 0
+        self.assertEqual(len(count), 101)
+        self.assertEqual(count[0], 0)
 
     def test_masked_array_zero_quantity(self):
         masked = self.analyzer.masked_array_zero_quantity()
@@ -81,8 +81,8 @@ class TestECommerceTransactions(unittest.TestCase):
         dates = self.analyzer.get_readable_dates()
         self.assertEqual(len(dates), 1000)
         for date in dates:
-            self.assertTrue(date.startswith('2023-'))
-            datetime.strptime(date, '%Y-%m-%d')  # This will raise ValueError if format is incorrect
+            self.assertTrue(date.startswith('2024-'))
+            datetime.strptime(date, '%Y-%m-%d')
 
 
 if __name__ == '__main__':
