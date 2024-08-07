@@ -12,14 +12,14 @@ numpy_practice/
 │   ├── array_advanced.py
 │   ├── array_data.py
 │   ├── basic_array.py
-│   ├── ecommerce.py
+│   ├── ecommerce_transactions.py
 │
 ├── tests/
 │   ├── __init__.py
 │   ├── test_array_advanced.py
 │   ├── test_array_data.py
 │   ├── test_basic_array.py
-│   ├── test_ecommerce.py
+│   ├── test_ecommerce_transactions.py
 │
 └── README.md
 ```
@@ -32,8 +32,8 @@ numpy_practice/
 - Description: Introduces basic operations in NumPy by creating and manipulating simple arrays.
 
 ### Task 2: Analyzing and Visualizing E-Commerce Transactions with NumPy
-- File: `ecommerce.py`
-- Test File: `test_ecommerce.py`
+- File: `ecommerce_transactions.py`
+- Test File: `test_ecommerce_transactions.py`
 - Description: Develop a set of Python functions using NumPy to manipulate and analyze a simulated ecommerce dataset.
 
 ### Task 3: Array Manipulation with Separate Output Function in NumPy
@@ -50,21 +50,22 @@ performing aggregate analyses on arrays.
 
 ## Running the Scripts
 
-To run each task's script:
-`python tasks/basic_array.py`
-`python tasks/ecommerce_transactions.py`
-`python tasks/array_advanced.py`
-`python tasks/array_data.py`
+To run each task's script: <br>
+`python tasks/basic_array.py` <br>
+`python tasks/ecommerce_transactions.py` <br>
+`python tasks/array_advanced.py` <br>
+`python tasks/array_data.py` <br>
+
 
 ## Running the Tests
 
-To run tests for a specific task:
-`python -m unittest tests/test_basic_array.py`
-`python -m unittest tests/test_ecommerce_transactions.py`
-`python -m unittest tests/test_array_advanced.py`
-`python -m unittest tests/test_array_data.py`
+To run tests for a specific task: <br>
+`python -m unittest tests/test_basic_array.py` <br>
+`python -m unittest tests/test_ecommerce_transactions.py` <br>
+`python -m unittest tests/test_array_advanced.py` <br>
+`python -m unittest tests/test_array_data.py` <br>
 
-To run all tests:
+To run all tests: <br>
 `python -m unittest tests`
 
 ## Requirements
@@ -72,7 +73,7 @@ To run all tests:
 - Python 3.x
 - NumPy
 
-Install the required package using:
+Install the required package using: <br>
 `pip install numpy`
 
 ## Contributing
