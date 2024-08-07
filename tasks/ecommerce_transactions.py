@@ -13,13 +13,12 @@ class ECommerceTransactions:
         random_days = np.random.randint(0, date_range, 1000)
         timestamps = [start_date + timedelta(days=int(day)) for day in random_days]
 
-        # Generate transactions with object dtype for better readability
         self.transactions = np.array([
             [i + 1,  # transaction_id
              np.random.randint(1, 101),  # user_id
              np.random.randint(1, 501),  # product_id
              np.random.randint(1, 11),  # quantity
-             round(np.random.uniform(10, 1000), 2),  # price (rounded to 2 decimal places)
+             round(np.random.uniform(10, 1000), 2),  # price
              timestamps[i].timestamp()]  # timestamp
             for i in range(1000)
         ], dtype='object')
@@ -166,8 +165,6 @@ def main():
         message="Sample of transactions with integer prices:"
     )
     assert converted_transactions.shape == ecommerce_data.transactions.shape, "Shape after converting prices to integers is incorrect"
-    # assert np.issubdtype(converted_transactions[:, 4].dtype,
-    #                      np.integer), "Prices were not converted to integers correctly"
 
     data_types = ecommerce_data.check_data_types()
     print(f"Data types: {data_types}")
