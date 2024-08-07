@@ -52,7 +52,7 @@ performing aggregate analyses on arrays.
 
 To run each task's script:
 `python tasks/basic_array.py`
-`python tasks/ecommerce.py`
+`python tasks/ecommerce_transactions.py`
 `python tasks/array_advanced.py`
 `python tasks/array_data.py`
 
@@ -60,7 +60,7 @@ To run each task's script:
 
 To run tests for a specific task:
 `python -m unittest tests/test_basic_array.py`
-`python -m unittest tests/test_ecommerce.py`
+`python -m unittest tests/test_ecommerce_transactions.py`
 `python -m unittest tests/test_array_advanced.py`
 `python -m unittest tests/test_array_data.py`
 
